@@ -18,6 +18,13 @@
     width: 150px;
 }
 
+button {
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    background-color: inherit;
+  }
+
 .navbar .nav-links a{
     text-decoration: none;
     font-family: 'Poppins', sans-serif;

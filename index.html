@@ -6,14 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Virtual Labs</title>
+    <title>Virtual labs</title>
+    <script>
+        function goHome() {
+            window.location = "#";
+        }
+    </script>
 </head>
 
 <body>
     <div class="navbar">
         <div class="logo">
-            <img src="./images/logo.svg" alt="">
-        </div>
+            <button onClick="goHome()"><img src="./images/logo.svg" alt=""></div></button>
         <div class="search-bar">
             <input type="text" class="search">
             <i class="fas fa-search"></i>
@@ -21,12 +25,12 @@
         </div>
         <div class="nav-links">
             <a href="#">Get started</a>
-            <a href="#">Login</a>
+            <a href="login/index.html">Login</a>
         </div>
     </div>
 
     <div class="hero">
-        <h2>Virtual Labs</h2>
+        <h2>Unreal Labs</h2>
         <p>Access simulation-based labs remotely</p>
     </div>
 
@@ -34,20 +38,66 @@
         <h2>Aim</h2>
         <hr>
         <br>
-
+        <div class="list-items">
         <ul>
-            <li>To make students learn new things according to their own pace and convenience.</li>
-            <li>To increase interest and eagerness among students to acquire knowledge through unique ways </li>
-            <li> To provide variety of experiments to students for practice and improving their skills</li>
-            <li> For making practical sessions indubious by coming up many tools and resources for teachers to easily
-                explain and guide</li>
+            <li> <p class="list-">To make students learn new things according to their own pace and convenience.</p><img src="c/images/lab.jpg" alt="" /></li>
+            <li> <img src="c/images/macbook.jpg" alt="" /><p class="list-">To increase interest and eagerness among students to acquire knowledge through unique ways</p> </li>
+            <li> <p class="list-"> To provide variety of experiments to students for practice and improving their skills</p><img src="c/images/alllab.jpg" alt="" /></li>
+            <li> <img src="c/images/nulla.jpg" alt="" /> <p class="list-"> For making practical sessions indubious by coming up many tools and resources for teachers to easily
+                explain and guide</p></li>
         </ul>
+    </div>
     </div>
 
     <div class="domians">
-        <div class="inside-domain">
+      <div class="inside-domain">
+          <br>
+          <div class="items">
+              <a class="item" href="#">
+                <div class="item-content">
+                  <p class="item-head">Courses</p>
+                  <p class="item-desc">Top courses and lectures by our skilled faculty
+                      <br><br><br><br>
+                      Glance Through Courses &nbsp <i class="fas fa-arrow-right"></i>
+                  </p></div>
+                  <img src="./images/icons/course.png" alt="">
+              </a>
+          </div>
+          <div class="items">
+              <a class="item" href="vlabs.html">
+                  <div class="item-content">
+                  <p class="item-head">Virtual Labs</p>
+                  <p class="item-desc">Practice structured lab programmes for REVA University students
+                    <br><br><br>
+                    Start Practicing Now &nbsp <i class="fas fa-arrow-right"></i>
+                  </p> </div>
+                  <img src="./images/icons/lab.png" alt="">
+              </a>
+          </div>
+          <div class="items">
+              <a class="item" href="#">
+                <div class="item-content">
+                  <p class="item-head">Events</p>
+                  <p class="item-desc">Attend live lectures and workshops
+                    <br><br><br><br>
+                    Check What's Happening &nbsp <i class="fas fa-arrow-right"></i>
+                  </p></div>
+                  <img src="./images/icons/events.png" alt="">
+              </a>
+          </div>
+          <div class="items">
+              <a class="item" href="#">
+                <div class="item-content">
+                  <p class="item-head">Certification</p>
+                  <p class="item-desc">Get certified and gain recognition
+                    <br><br><br><br>
+                    Earn Your Certificate &nbsp <i class="fas fa-arrow-right"></i>
+                  </p></div>
+                  <img src="./images/icons/certify.png" alt="">
+              </a>
+          </div>
 
-            <h2>Domains in virtual labs</h2>
+               <!--<h2>Domains in virtual labs</h2>
             <hr>
             <br>
             <div class="items">
@@ -57,7 +107,7 @@
                 </a>
                 <a class="item" href="#">
                     <img src="./images/items/2.png" alt="">
-                    <p>Computer networks</p>
+                    <p    >Computer networks</p>
                 </a>
                 <a class="item" href="./c/">
                     <img src="./images/items/3.png" alt="">
@@ -81,10 +131,11 @@
                 </a>
                 <a class="item" href="#">
                     <img src="./images/items/8.png" alt="">
-                    <p>Apllication development</p>
+                    <p>Application development</p>
                 </a>
-            </div>
-        </div>
+            </div> -->
+        </div> 
+       
     </div>
 
 
@@ -94,6 +145,14 @@
         <div class="footer-name">
             <h4>Virtual labs</h4>
             <p>Access simulation-based labs remotely</p>
+        </div>
+
+        <div class="footer-content">
+            <span><a href="#">C programming</a> </span><span>|</span>
+            <span><a href="#">AIML</a> </span><span>|</span>
+            <span><a href="#">Python</a> </span><span>|</span>
+            <span><a href="#">DSA</a> </span><span>|</span>
+            <span><a href="#">DBMS</a> </span>
         </div>
     </div>
 

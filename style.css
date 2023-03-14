@@ -7,7 +7,7 @@
 }
 
 .navbar{
-    background-color: #0096a1;
+    background-color: #00d7c3;
     padding: 10px 40px;
     height: 60px;
     display: flex;
@@ -26,6 +26,14 @@
     color: #ffffff;
 }
 
+button {
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    background-color: inherit;
+  }
+
+
 .navbar .search-bar{
     background-color: #ffffff;
     padding: 5px 10px 5px 20px;
@@ -43,7 +51,7 @@
 }
 
 .navbar .search-bar i{
-    color: #0096a1;
+    color: #00d7c3;
     cursor: pointer;
 }
 
@@ -88,31 +96,71 @@
     margin: 20px 0px;
     font-family: 'Poppins', sans-serif;
 }
-
-.motives ul li{
-    margin-top: 10px;
-    background-color: #0096a1;
-    border-radius: 10px;
-    padding: 10px 20px;
-    color: #ffffff;
-    font-family: 'Poppins', sans-serif;
+.motives .list-items li{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
-.domians{
+.motives ul .list-{
+    background-color: rgb(9,196,200);
+    margin-top: 10px;
+    height: auto;
+    width: auto;
+    padding: 90px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.motives ul .list-:nth-child(odd){
+    border-radius: 10px 0px 0px 10px;
+}
+
+.motives ul .list-:nth-child(even){
+    border-radius: 0px 10px 10px 0px;
+}
+
+.motives ul .list-:hover{
+    box-shadow: 0 0 10px 0 rgba(13, 249, 225, 0.714) inset, 0 0 20px 2px rgb(93, 93, 93);
+
+}
+
+.motives .list-items  img{
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.domains{
     padding: 100px 40px;
-    background-color: #0096a1;
+    background-color: rgb(9, 190, 200);
+    border-radius: 10px;
 }
 
 .inside-domain{
-    max-width: 1140px;
+    width: auto;
     margin: auto;
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+
 }
 
 .inside-domain h2{
     margin: 20px 0px;
     font-family: 'Poppins', sans-serif;
-    color: #cbcbcb;
+    color: #000;
+}
+
+.inside-domain hr{
+    color: #000;
 }
 
 
@@ -120,13 +168,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    flex-direction: row;
 
 }
 
 .inside-domain .items .item{
     background-color: #ffffff;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
     text-decoration: none;
-    width: 240px;
+    width: 600px;
     text-align: center;
     border-radius: 10px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -134,12 +186,44 @@
     margin: 20px;
 }
 
+.inside-domain .items .item .item-content{
+    text-align: left;
+    padding: 10px;
+}
+
+.inside-domain .items .item .item-content .item-head{
+ font-weight: 600;
+ font-size: 1.5rem;
+}
+.items .item .item-content .item-desc{
+    font-weight: 400;
+    margin-top: 8px;
+    color: #222222;
+    transition: 0.2s ease-in-out;
+}
+.items .item .item-content .item-desc i{
+    transition: 0.2s ease-in-out;
+    opacity: 0.8;
+}
+
 .inside-domain .items .item:hover{
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+
+}
+.inside-domain .items .item:hover img{
+    transform: scale(1.1) rotate(10deg);
+}
+.inside-domain .items .item:hover .item-desc p{
+   text-decoration: underline;
+}
+
+.inside-domain .items .item:hover .item-desc i{
+   transform: translateX(10px);
 }
 
 .inside-domain .items .item img{
     width: 150px;
+    transition: .2s ease-in-out;
     margin-bottom: 20px;
 }
 
@@ -178,7 +262,7 @@
 .footer-content{
     margin-top: 15px;
     color: #868686;
-    
+
 }
 
 .footer-content span{

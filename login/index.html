@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Virtual labs</title>
+    <script>
+        function goHome() {
+            window.location = "#";
+        }
+        function teachLogin(){
+            window.location = "../teacher-login/index.html";
+        }
+        function studentLogin(){
+            window.location = "../student-login/index.html";
+        }
+    </script>
+    <title>Sign in</title>
+</head>
+<body>
+        <div class="navbar">
+            <div class="logo">
+                <a href=""><img src="../images/logo.svg" alt=""></div></a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        
+                        <li><a href="#">About</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="container">
+                <div class="teach-login">
+                <div class="ac-content">
+                <div class="teach-head">
+                <h2 class="login-title">For<br /><span class="teach-head">Teachers</span></h2>
+                <img class="teach-img" src="images/professor.png" alt="">
+                </div>
+
+                <div class="line"></div>
+
+                <ul class="teach-list">
+                    
+                    <li>Give and evaluate assignments</li>
+                    <li>Oversee student performances</li>
+                    <li>Create labs</li>
+                    <li>Organize lectures</li>
+                </ul>
+                <br />
+                
+                <button class="btn" onClick="teachLogin()">Get Started</button>
+            </div>
+            </div>
+              <div class="student-login">
+                  <div class="ac-content">
+                  <div class="student-head">
+                  <h2 class="login-title">For<br /><span class="student-head">Students</span></h2>
+                  <img class="student-img" src="images/student.png" alt="">
+                </div>
+                  <div class="line"></div>
+                  <ul class="teach-list">
+                    
+                    <li>Practice and become perfect</li>
+                    <li>Enhance your skills</li>
+                    <li>Compete with other students</li>
+                    <li>Attend lectures by top faculty</li>
+                </ul>
+                <br />
+
+                <button class="stud-btn" onClick="studentLogin()">Get Started</button>
+
+            </div>
+              </div>
+            </div>
+
+           
+
+            <div class="footer">
+                <div class="footer-name">
+                    <h4>Unreal Labs</h4>
+                    <p>Access simulation-based labs remotely</p>
+                </div>
+        
+                
+            </div>
+            <script src="https://kit.fontawesome.com/e48d166edc.js"></script>
+</body>
+</html>

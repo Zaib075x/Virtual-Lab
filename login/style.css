@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,700;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.navbar{
+    background-color: #09c4c8;
+    padding: 10px 30px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo img{
+    width: 150px;
+}
+
+.navbar .nav-links a{
+    text-decoration: none;
+    font-family: 'Gothic', sans-serif;
+    margin: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    
+    float: left;
+}
+.navbar .nav-links li{
+    list-style: none;
+    float: left;
+  padding: 0 10px;
+  font-size: 14px;
+  border-right: 1px #ffffff solid;
+}
+.navbar li:last-child {
+    border-right: none;
+}
+
+
+.home-btn {
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    background-color: inherit;
+  }
+
+  .container{
+      width: 100%;
+      padding: 0;
+  }
+
+  .teach-img,.student-img{
+      margin-left: 90%;
+      height: 200px;
+      width: 200px;
+  }
+  .teach-head, .student-head{
+    margin-top: 0%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+
+  .ac-content{
+      margin-left: 10px;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+  }
+
+  
+  .teach-login{
+      background-color: rgba(9, 196, 200,0.2);
+      width: 50%;
+      height: 750px;
+      float: left;
+    }
+    .student-login{
+        background-color: rgba(153, 244, 250, 0.2);
+       width: 50%;
+        margin-left: 50%;
+        height: 750px;
+    }
+    .login-title{
+        margin-top: 10%;
+        padding: 10;
+        font-family: 'Fira Sans Extra Condensed', sans-serif;
+        color: #1e1e1e;
+        font-size: 50px;
+    }
+    .line{
+        background: black;
+        height: 1px;
+        width: 95%;
+        margin-left: 20px;
+    }
+    .btn{
+        height: 60px;
+        width: 200px;
+        margin-top: 35%;
+        margin-left: -100px;
+        color: #fff;
+        font-size: 15px;
+        text-transform: uppercase;
+        padding: 15px 10px;
+        font-family: 'Fira Sans', sans-serif;
+        -webkit-transition: all .15s ease-in-out;
+        border: 0;
+        background-color: #09c4c8;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: 0s;
+    }
+
+        .btn:hover {
+            animation: pulse 2s infinite;
+            background-color: #04b1b1;
+            transition: 0s;
+            box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+            border: 0px solid #00d7c3;
+          }
+          @keyframes pulse {
+            0% {
+              transform: scale(1);
+            }
+            70% {
+              transform: scale(.9);
+            }
+              100% {
+              transform: scale(1);
+            }
+          }
+
+          .stud-btn{
+            height: 60px;
+            width: 200px;
+            margin-top: 35%;
+            margin-left: -100px;
+            color: #000;
+            font-size: 15px;
+            text-transform: uppercase;
+            padding: 15px 10px;
+            font-family: 'Fira Sans', sans-serif;
+            border: 3px solid #09c4c8;
+            background-color: transparent;
+            -webkit-transition: all .15s ease-in-out;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0s;
+
+          }
+          .stud-btn:hover{
+            animation: pulse 2s infinite;
+            background-color: transparent;
+            transition: 0s;
+            box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+            border: 3px solid #00d7c3;
+          }
+         
+    .teach-list{
+        margin-top: 25px;
+        font-family: 'Open Sans', sans-serif;
+        margin-left: 30px;
+        font-weight: 300;
+        line-height: 2em;
+        font-size: 25px;
+        float: left;
+        list-style-type: square;
+        
+    }
+    li{
+        padding: 0 0 0 20px;
+    }
+
+      
+/* Footer */
+.footer{
+    background-color: #02353b;
+    padding: 20px 20px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.footer-name{
+    margin-top: 10px;
+}
+
+.footer-name h4{
+    font-size: 2rem;
+    color: #f5f5f5;
+}
+.footer-name p{
+    font-size: 1rem;
+    color: #d8d8d8;
+}
+
+.footer-content{
+    margin-top: 15px;
+    color: #868686;
+    
+}
+
+.footer-content span{
+    margin: 4px;
+}
+
+.footer-content span a{
+  color: #afafaf;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 400px){
+  .footer-name h4{
+      font-size: 1.7rem;
+  }
+  .footer-name p{
+      font-size: 0.8rem;
+  }
+  .footer{
+      padding: 20px 10px;
+  }
+  .footer-content span{
+      margin: 2px;
+  }
+
+  .footer-content span a{
+    font-size: 10px;
+}
+}
+
